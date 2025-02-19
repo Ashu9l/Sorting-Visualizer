@@ -9,10 +9,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/sorting-visualizer/",
+  base: "/Sorting-visualizer/",
   build: {
     outDir: "dist",
-    sourcemap: true,
-    assetsInlineLimit: 4096
-  }
+  },
 });
