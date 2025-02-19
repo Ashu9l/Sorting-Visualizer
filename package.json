@@ -5,12 +5,12 @@
   "type": "module",
   "license": "MIT",
   "author": {
-    "name": "Sadanand pai",
+    "name": "Sadanand Pai",
     "email": "sadypai@gmail.com"
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",

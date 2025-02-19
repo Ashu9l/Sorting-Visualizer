@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import path from "path";
 import react from "@vitejs/plugin-react-swc";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
@@ -10,5 +9,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/sorting-visualizer/dist/",
+  base: "/sorting-visualizer/",
+  build: {
+    outDir: "dist",
+    sourcemap: true,
+    assetsInlineLimit: 4096
+  }
 });
